@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericios JavaScript</title>
+    <style>
+         body {
+        background:
+        linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+        linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+        background-size: 100px 100px;
+        background-color: #EC173A;
+        }
+        .mr{ border-radius: 15px;
+        }
+        .mri{
+            margin-right: 10px;
+        }
+        .box{ transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container">
+            <div class="row container-fluid">
+                <h3 class="text-center m-5 ">Ejericios JavaScript</h3>
+                <!--Ejercicio 1-->
+                <div class="col-3 mr mri box">
+                    <h5 class="text-center">Ejercicio 1</h5>
+                    <div class="form-group">
+                      <label for="cantidadVarones">Cantidad Varones</label>
+                      <input type="text" name="cantidadVarones" class="form-control" id="cantidadVarones">
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidadMujeres">Cantidad Mujeres</label>
+                        <input type="text" name="cantidadMujeres" class="form-control" id="cantidadMujeres">
+                    </div>
+                    <div class="text-center m-3">
+                        <button type="submit" class="btn btn-primary" onclick="porcentajeEstudiantes()">Calcular</button>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="porcentajeVarones" class="col-8 col-form-label">Cantidad de estudiantes</label>
+                        <div class="col-4">
+                            <input type="text" name="porcentajeVarones" class="form-control" id="cantidadEstudiantes" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="cantidadEstudiantes" class="col-8 col-form-label">Porecentaje de varones </label>
+                        <div class="col-4">
+                            <input type="text" name="cantidadEstudiantes" class="form-control" id="porcentajeVarones" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="porcentajeMujeres" class="col-8 col-form-label">Porecentaje de Mujeres </label>
+                        <div class="col-4">
+                             <input type="text" name="porcentajeMujeres" class="form-control" id="porcentajeMujeres" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ejercicio 2-->
+                <div class="col-4 mr mri box">
+                    <h5 class="text-center">Ejercicio 2</h5>
+                    <div class="form-group">
+                      <label for="montoDinero">Monto de dinero de reparación</label>
+                      <input type="text" name="montoDinero" class="form-control" id="montoDinero">
+                    </div>
+                    <div class="text-center m-3">
+                        <button type="submit" class="btn btn-primary" onclick="repartoMonto()">Calcular</button>
+                    </div>
+                    <div class="form-group row mb-2">
+                        <label for="avMar" class="col-8 col-form-label">Monto para Avenida La Mar </label>
+                        <div class="col-4">
+                            <input type="text" name="avMar" class="form-control" id="avMar" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-2">
+                        <label for="avAbancay" class="col-8 col-form-label">Monto para Avenida Abancay </label>
+                        <div class="col-4">
+                            <input type="text" name="avAbancay" class="form-control" id="avAbancay" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-2">
+                        <label for="avJulio" class="col-8 col-form-label">Monto para Avenida 28 de Julio </label>
+                        <div class="col-4">
+                             <input type="text" name="avJulio" class="form-control" id="avJulio" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-2">
+                        <label for="avAviacion" class="col-8 col-form-label">Monto para Avenida Avianción </label>
+                        <div class="col-4">
+                             <input type="text" name="avAviacion" class="form-control" id="avAviacion" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="avTacna" class="col-8 col-form-label">Monto para Avenida Tacna </label>
+                        <div class="col-4">
+                             <input type="text" name="avTacna" class="form-control" id="avTacna" readonly>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!--Ejercicio 3-->
+                  <div class="col-4 mr box">
+                    <h5 class="text-center">Ejercicio 3</h5>
+                    <div class="form-group">
+                      <label for="eGeneral">Cantidad de entrada general</label>
+                      <input type="text" name="eGeneral" class="form-control" id="eGeneral">
+                    </div>
+                    <div class="form-group">
+                        <label for="eMayores">Cantidad de entrada de mayores de 65</label>
+                        <input type="text" name="eMayores" class="form-control" id="eMayores">
+                    </div>
+                    <div class="form-group">
+                        <label for="eMenores">Cantidad de entrada de menores de edad</label>
+                        <input type="text" name="eMenores" class="form-control" id="eMenores">
+                    </div>
+                    <div class="text-center m-3">
+                        <button type="submit" class="btn btn-primary" onclick="entradasVendias()">Calcular</button>
+                    </div>
+                    <div class="form-group row mb-1">
+                        <label for="totalEgeneral" class="col-8 col-form-label">Monto vendido de entrada general</label>
+                        <div class="col-4">
+                            <input type="text" name="totalEgeneral" class="form-control" id="totalEgeneral" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-1">
+                        <label for="totalEmayores" class="col-8 col-form-label">Monto vendido de mayores de 65</label>
+                        <div class="col-4">
+                            <input type="text" name="totalEmayores" class="form-control" id="totalEmayores" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-1">
+                        <label for="totalEmenores" class="col-8 col-form-label">Monto vendido de menores de edad</label>
+                        <div class="col-4">
+                             <input type="text" name="totalEmenores" class="form-control" id="totalEmenores" readonly>
+                        </div>
+                    </div>
+             </div>
+        </div>
+        <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
